@@ -270,15 +270,3 @@ np.random.seed(2024)
 
 评估阶段也固定了随机种子，以便在相同运行环境下尽量复现实验结果。由于 PyTorch 后端、CPU/GPU、库版本等因素可能存在差异，结果可能出现轻微浮动。
 
-## 开源建议
-
-正式上传 GitHub 前，建议补充以下文件：
-
-- `requirements.txt`：记录依赖版本；
-- `.gitignore`：忽略 `__pycache__/`、训练结果图、临时文件等；
-- `LICENSE`：声明开源协议，例如 MIT、Apache-2.0 或 GPL；
-- 论文引用信息：如果本项目对应已发表论文，建议在 README 中加入 BibTeX。
-
-## License
-
-请根据你的开源计划选择合适协议。若尚未确定，可先在 GitHub 创建仓库时选择 MIT License，或后续手动添加 `LICENSE` 文件。
