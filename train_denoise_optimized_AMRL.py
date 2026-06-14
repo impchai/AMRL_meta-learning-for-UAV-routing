@@ -109,7 +109,8 @@ class UAV_IoT_Env:
 
         if action != 0:
             k = action - 1
-            self.PAoI[k] = tau_t
+            # self.PAoI[k] = tau_t
+            self.PAoI[k] = T_hov
             self.Q[k] = 0.0
 
         self.uav_pos = target_pos
